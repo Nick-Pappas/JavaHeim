@@ -47,7 +47,7 @@ namespace JavaHeim
                  */
                 if (_nameFieldInfo == null)
                 {
-                    _nameFieldInfo = hudDataP.GetType().GetField("m_name", BindingFlags.Public | BindingFlags.Instance);
+                    _nameFieldInfo = hudDataP.GetType().GetField("m_name", BindingFlags.Public | BindingFlags.Instance);//O(sqrt(PERFORMANERATE)^2)
                 }
 
                 /**
